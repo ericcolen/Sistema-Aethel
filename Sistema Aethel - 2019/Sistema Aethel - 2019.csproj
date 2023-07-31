@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E07147E-4A38-490D-9841-ED441C584AFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sistema_Aethel___2019</RootNamespace>
+    <AssemblyName>Sistema Aethel - 2019</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bdaethelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bdaethelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="cadMercadorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadMercadorias.Designer.cs">
+      <DependentUpon>cadMercadorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadProdutos.Designer.cs">
+      <DependentUpon>cadProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientCadastro.Designer.cs">
+      <DependentUpon>clientCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consulMercadorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulMercadorias.Designer.cs">
+      <DependentUpon>consulMercadorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consulProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulProdutos.Designer.cs">
+      <DependentUpon>consulProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estqMercadorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estqMercadorias.Designer.cs">
+      <DependentUpon>estqMercadorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estqProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estqProdutos.Designer.cs">
+      <DependentUpon>estqProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feiraVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feiraVendas.Designer.cs">
+      <DependentUpon>feiraVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="funcioCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funcioCadastro.Designer.cs">
+      <DependentUpon>funcioCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mercadEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mercadEstoque.Designer.cs">
+      <DependentUpon>mercadEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mercadRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mercadRelatorio.Designer.cs">
+      <DependentUpon>mercadRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prodEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prodEstoque.Designer.cs">
+      <DependentUpon>prodEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prodRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prodRelatorio.Designer.cs">
+      <DependentUpon>prodRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sistema.Designer.cs">
+      <DependentUpon>sistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vendaRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendaRelatorio.Designer.cs">
+      <DependentUpon>vendaRelatorio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cadMercadorias.resx">
+      <DependentUpon>cadMercadorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadProdutos.resx">
+      <DependentUpon>cadProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientCadastro.resx">
+      <DependentUpon>clientCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consulMercadorias.resx">
+      <DependentUpon>consulMercadorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consulProdutos.resx">
+      <DependentUpon>consulProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estqMercadorias.resx">
+      <DependentUpon>estqMercadorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estqProdutos.resx">
+      <DependentUpon>estqProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feiraVendas.resx">
+      <DependentUpon>feiraVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="funcioCadastro.resx">
+      <DependentUpon>funcioCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mercadEstoque.resx">
+      <DependentUpon>mercadEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mercadRelatorio.resx">
+      <DependentUpon>mercadRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prodEstoque.resx">
+      <DependentUpon>prodEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prodRelatorio.resx">
+      <DependentUpon>prodRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sistema.resx">
+      <DependentUpon>sistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="vendaRelatorio.resx">
+      <DependentUpon>vendaRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bdaethelDataSet.xsc">
+      <DependentUpon>bdaethelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bdaethelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bdaethelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bdaethelDataSet.xss">
+      <DependentUpon>bdaethelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
